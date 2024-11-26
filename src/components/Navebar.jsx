@@ -24,7 +24,7 @@ function Navebar() {
             Pages
           </li>
           <IoIosArrowDown /> */}
-          <div className="flex items-center cursor-pointer font-Poppins font-[400] gap-2">
+          <div className="flex items-center cursor-pointer font-Poppins justify-center font-[400] gap-2">
             <li className="list-none">Pages</li>
             <IoIosArrowDown className="text-sm " />
           </div>
