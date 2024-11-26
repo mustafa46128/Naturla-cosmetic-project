@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Group, SearchIcon } from "./Icon";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
+import { IoIosArrowDown } from "react-icons/io";
 
 function Navebar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,14 @@ function Navebar() {
           <li className="cursor-pointer font-Poppins font-[400]">Home</li>
           <li className="cursor-pointer font-Poppins font-[400]">Shop</li>
           <li className="cursor-pointer font-Poppins font-[400]">Our Story</li>
-          <li className="cursor-pointer font-Poppins font-[400]">Pages</li>
+          {/* <li className="cursor-pointer font-Poppins font-[400] ">
+            Pages
+          </li>
+          <IoIosArrowDown /> */}
+          <div className="flex items-center cursor-pointer font-Poppins font-[400] gap-2">
+            <li className="list-none">Pages</li>
+            <IoIosArrowDown className="text-sm " />
+          </div>
         </ul>
       </div>
 
@@ -51,6 +59,7 @@ function Navebar() {
             <li className="cursor-pointer font-Poppins">Shop</li>
             <li className="cursor-pointer font-Poppins">Our Story</li>
             <li className="cursor-pointer font-Poppins">Pages</li>
+
             <div className="flex gap-4 mt-4">
               <SearchIcon className="cursor-pointer font-Poppins font-[400]" />
               <Group />
